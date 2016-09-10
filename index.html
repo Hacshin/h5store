@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+		<link rel="stylesheet" href="styles/mui.css" />
+		<link rel="stylesheet" type="text/css" href="styles/mui.picker.all.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+		<script src="lib/jquery-1.11.3.min.js"></script>
+		<script src="lib/jsrender.min.js"></script>
+		<script src="lib/echarts.common.min.js"></script>
+		<script src="js/component/Table.js"></script>
+		<script src="lib/mui.js"></script>
+		<script id="side" type="text/x-jsrender">
+			<li class="mui-table-view-cell"><a class="mui-navigate-right">{{:sidemenu}}</a></li>
+		</script>
+		
+	</head>
+	<body>
+			<!--侧滑菜单部分-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left mui-transitioning">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll"></div>
+					<!-- 增加滚动条 -->
+					<div class="mui-scrollbar mui-scrollbar-vertical">
+						<div class="mui-scrollbar-indicator"></div>
+					</div>
+				</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	    		<a id="offCanvasShow" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+	        <a class="mui-icon mui-icon-left-nav mui-pull-left" href="index.html"></a>
+	        <a id="icon-menu" class="mui-action-menu mui-icon mui-icon-plusempty mui-pull-right"></a>
+	        <h1 class="mui-title"></h1>
+	    </header>
+
+	    <!-- 弹出菜单 -->
+			<div id="menu-wrapper" class="menu-wrapper hidden">
+				<div id="menu" class="menu">
+					<ul class="mui-table-view mui-table-view-inverted">
+						<li class="mui-table-view-cell">
+							<a class="add tab-selected">新增</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="lost">流失</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+	    <!-- 主页面内容 -->
+			<div id="offCanvasContentScroll" class="mui-content">
+	        <div class="slider">
+	<!-- slogan -->
+	<div class="slogan"></div>
+
+	<!-- 新增流失概况 -->
+	<div id="updown"></div>
+	<!-- 来源渠道 -->
+	<div id="laiyuan"></div>
+<!-- DOU分层 -->
+	<div id="DOU"></div>
+<!-- ARPU分层 -->
+	<div id="ARPU"></div>
+	<!-- 网龄分层 -->
+	<div id="useage"></div>
+	<!-- 客户类型 -->
+	<div id="kehu"></div>
+<!-- 品牌分类 -->
+	<div id="pinpai"></div>
+<!-- 设备分层 -->
+	<div id="device"></div>
+
+	<div class="something"></div>
+
+</div>
+
+	    </div>
+	      <!--底部导航栏-->
+	      <div class="app-footer">
+	        <!--自定义选择时间tab组件-->
+	        <div class="mui-item mui-time-item">
+	          <ul class="mui-table-time-cell">
+	            <button id='select-time' data-options='{"type":"date"}' class="btn mui-btn mui-btn-blue mui-btn-outlined">选择时间</button>
+	            <div id="result" class="active"></div>
+	            <button id="search" class="mui-btn mui-btn-red">查询</button>
+	          </ul>
+	        </div>
+
+	        <!--自定义图表选择tab组件-->
+	      <div class="mui-item mui-chart-item">
+	        <ul class="mui-table-chart-cell">
+	          <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined" id="data-compare">对比图</button>
+	            <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined" id="data-show">堆叠图</button>
+	        </ul>
+	      </div>
+
+	        <!--底部导航栏-->
+	        <nav class="mui-bar mui-bar-tab">
+	            <a class="mui-tab-item mui-active" id="time-table" href="">
+	                <span class="mui-icon mui-icon-home mui-icon-home-filled"></span>
+	                <span class="mui-tab-label">日期时间</span>
+	            </a>
+	            <a class="mui-tab-item" id="chart-table" href="">
+	                <span class="mui-icon mui-icon-gear"></span>
+	                <span class="mui-tab-label">图表</span>
+	            </a>
+	        </nav>
+	      </div> 
+	      <!-- off-canvas backdrop -->
+	      <div class="mui-off-canvas-backdrop"></div>
+	      <div id="menu-backdrop" class="menu-backdrop" style="opacity: 0;"></div>
+			</div>
+		</div>
+		
+		<script src="js/component/sidebar.js"></script>
+		<script src="lib/mui.picker.all.js"></script>
+	  <script src="js/component/form.js"></script>
+	  <script src="js/component/tabMenu.js"></script>
+		<script src="js/ajax/maneu.js"></script>
+		<script src="js/ajax/init.js"></script>
+		<script src="js/charts/compare.js"></script>
+		<script src="js/charts/line.js"></script>
+	</body>
+</html>

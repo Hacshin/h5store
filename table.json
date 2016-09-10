@@ -1,0 +1,78 @@
+{
+	"table": [{
+		"xinzeng": {
+			"title": "新增关注情况",
+			"thead": {
+				"style": "渠道类型",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		},
+		"laiyuan": {
+			"title": "来源渠道",
+			"thead": {
+				"style": "新来源",
+				"present": "用户数",
+				"target": "绑定数"
+			}
+		},
+		"DOU": {
+			"title": "DOU分层",
+			"sec_title": "人均DOU",
+			"thead": {
+				"style": "范围",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		},
+		"ARPU": {
+			"title": "ARPU分层",
+			"sec_title": "人均ARPU",
+			"thead": {
+				"style": "范围",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		},
+		"useage": {
+			"title": "网龄分层",
+			"sec_title": "人均网龄",
+			"thead": {
+				"style": "范围",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		},
+		"pinpai": {
+			"title": "品牌",
+			"thead": {
+				"style": "品牌类型",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		},
+		"kehu": {
+			"title": "客户类型",
+			"thead": {
+				"style": "客户类型",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		},
+		"device": {
+			"title": "终端",
+			"thead": {
+				"style": "终端类型",
+				"present": "数据",
+				"target": "目标",
+				"where": "进度"
+			}
+		}
+	}]
+}
